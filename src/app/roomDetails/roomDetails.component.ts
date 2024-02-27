@@ -8,17 +8,25 @@ import { CommonModule } from '@angular/common';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 
 @Component({
   selector: 'app-roomDetails',
   standalone: true,
-  imports: [CommonModule, SearchComponent, JumbotronComponent, CarouselComponent, AmenitiesComponent],
+  imports: [
+    CommonModule,
+    SearchComponent,
+    JumbotronComponent,
+    CarouselComponent,
+    AmenitiesComponent,
+    ImageGalleryComponent
+  ],
   templateUrl: './roomDetails.component.html',
   styleUrls: ['./roomDetails.component.css'],
 })
 export class RoomDetailsComponent implements OnInit {
   room$!: Observable<room | undefined>;
-
+  
   constructor(
     private roomService: RoomsService,
     private route: ActivatedRoute
@@ -31,4 +39,6 @@ export class RoomDetailsComponent implements OnInit {
       })
     );
   }
+
+
 }

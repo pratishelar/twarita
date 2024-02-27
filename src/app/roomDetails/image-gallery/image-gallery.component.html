@@ -1,0 +1,12 @@
+<div class="gallery">
+  <div *ngFor="let image of images; let i = index" class="img-wrapper">
+    <img [src]="image" [alt]="'Image ' + i" class="gallery-img" (click)="showLightbox(i)">
+  </div>
+</div>
+
+<div class="lightbox" *ngIf="currentImageIndex !== null" (click)="closeLightbox()">
+  <!-- <button class="close-button" (click)="closeLightbox()">X</button> -->
+  <img [src]="images[currentImageIndex]" class="lightbox-img">
+  <button class="nav left" (click)="navigate(-1);$event.stopPropagation()">‹</button>
+  <button class="nav right" (click)="navigate(1);$event.stopPropagation()">›</button>
+</div>

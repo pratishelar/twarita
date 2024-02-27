@@ -6,6 +6,7 @@ import { HeroComponent } from './home/hero/hero.component';
 import { SearchComponent } from './home/search/search.component';
 import { RoomsComponent } from './rooms/rooms.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
