@@ -1,0 +1,15 @@
+.promotionBanner{
+    background-color: black;
+}
+.navbar-dark{
+    font-size: 12px;
+    background-color: black !important;
+}
+ul li{
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+ul li a{
+    color:rgb(16, 12, 12) !important;
+}

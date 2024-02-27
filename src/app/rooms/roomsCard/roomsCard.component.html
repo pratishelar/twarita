@@ -1,0 +1,15 @@
+<div class="card text-center m-3 ">
+  <div class="card-header p-0">
+    <img src="{{room.img}}" alt="img" class="w-100">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{room.title}}</h5>
+    <p class="card-text">{{room.text}}</p>
+
+  </div>
+  <div class="card-footer text-muted">
+    <a routerLink="/room/{{index}}">
+      {{room.price}} &#8377;
+    </a>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container pt-5 pb-5 text-center" id="rooms">
+  <h1 class="m-5">Rooms</h1>
+
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let room of roomsService.rooms; let i = index">
+      <app-roomsCard [room]="room" [index]="i"></app-roomsCard>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+<div *ngIf="room$ | async as room">
+  <!-- <app-jumbotron [roomJumbotron]="room"></app-jumbotron> -->
+
+  <div class="row">
+    <div class="col-md-12 mt-4 mb-4">
+      <h1 class="mt-2">{{room.title}}</h1>
+      <h4 class="mt-2">{{room.text}}</h4>
+    </div>
+    <div class="col-md-12">
+      <app-carousel [roomCarousel]="room"></app-carousel>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <article class="blog-post mt-4 mb-4">
+        <h2 class="blog-post-title mt-4">{{room.title}}</h2>
+        <p class="blog-post-meta mt-4">Welcome to our lakefront vacation rental! Enjoy the full spectrum of morning
+          golden
+          hour colours in this premium waterfront villa on Lake Simcoe.</p>
+
+        <p class="mt-4"> This premium house on a private road is situated in a quiet neighbourhood, which offers a
+          peaceful
+          environment
+          for time well spent with a group of friends or large family gatherings. <a href="#">Jacob</a></p>
+
+        <p class="mt-4">This is some additional paragraph placeholder content. It's a slightly shorter version of the
+          other highly
+          repetitive body text used throughout.</p>
+
+        <app-amenities [roomAmenities]="room"></app-amenities>
+      </article>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky mb-5" style="top: 2rem;">
+
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-4">
+            <h1 class="card-title mb-5 fs-5">4000 Rs per night</h1>
+            <form>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <input type="datetime-local" class="form-control search-slt" placeholder="Checkin time">
+                </div>
+                <div class="col-md-12 mb-3">
+                  <input type="datetime-local" class="form-control search-slt" placeholder="Checkout time">
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <select class="form-control search-slt" id="exampleFormControlSelect1">
+                    <option>Room</option>
+                    <option>Delux Room</option>
+                    <option>Family Room</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-grid mt-3 mb-3">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Reserve</button>
+              </div>
+              <hr class="my-4">
+              <div class="d-grid mb-2">
+                <div class="row mb-3">
+                  <div class="col-md-8">
+                    <span> $2,060 CAD x 5 nights Show price breakdown </span>
+                  </div>
+                  <div class="col-md-4">
+                    <strong class="float-end"> 10,300 Rs </strong>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-8">
+                    <span> Cleaning fee Show price breakdown </span>
+                  </div>
+                  <div class="col-md-4">
+                    <strong class="float-end"> 300 Rs </strong>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-8">
+                    <span> Taxes </span>
+                  </div>
+                  <div class="col-md-4">
+                    <strong class="float-end"> 400 Rs </strong>
+                  </div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                  <div class="col-md-8">
+                    <strong> Total </strong>
+                  </div>
+                  <div class="col-md-4">
+                    <strong class="float-end"> 40000 Rs </strong>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
