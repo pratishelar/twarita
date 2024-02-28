@@ -1,9 +1,9 @@
 .card {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.09), 0 0 6px rgba(0, 0, 0, 0.05);
     transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
       0.3s box-shadow,
       0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-    border-radius: 30px;
+    border-radius: 10px;
     background: #000000;
     color: aliceblue;
     border: none;
@@ -11,7 +11,7 @@
   
   .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     border: none;
   }
@@ -22,17 +22,17 @@
   
   .card-footer {
     background: #171717;
-    border-bottom-left-radius: 30px !important;
-    border-bottom-right-radius: 30px !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
   }
   
   .card-header {
-    border-radius: 30px !important;
+    border-radius: 10px !important;
     border: 0px;
     background: #000000;
   }
   
   .card-header img {
-    border-radius: 30px;
+    border-radius: 10px;
   }
   

@@ -21,16 +21,16 @@ export class ImageGalleryComponent implements OnInit{
   currentImageIndex: number | null = null;
 
   ngOnInit() {
-    this.preloadImages();
+    // this.preloadImages();
   }
 
 
-  preloadImages() {
-    for (const src of this.images) {
-      const img = new Image();
-      img.src = src;
-    }
-  }
+  // preloadImages() {
+  //   for (const src of this.images) {
+  //     const img = new Image();
+  //     img.src = src;
+  //   }
+  // }
 
   showLightbox(index: number) {
     this.currentImageIndex = index;
