@@ -13,7 +13,7 @@
 
 
   <div class="row g-5">
-    <div class="col-md-8">
+    <div class="col-lg-8 col-md-7">
       <article class="blog-post mt-4 mb-4">
         <h2 class="blog-post-title mt-4">{{room.title}}</h2>
         <p class="blog-post-meta mt-4">Welcome to our lakefront vacation rental! Enjoy the full spectrum of morning
@@ -29,16 +29,32 @@
           other highly
           repetitive body text used throughout.</p>
 
-          <app-image-gallery></app-image-gallery>
+        <app-image-gallery></app-image-gallery>
 
         <app-amenities [roomAmenities]="room"></app-amenities>
       </article>
 
+      <div class="fixed-card">
+        <div class="card">
+          <!-- <h5 class="card-header">Featured</h5> -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <span class="card-text"><strong> 4000 </strong> Rs per night</span>
+                <div>May 20 - 25</div>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-primary float-end">Reserve</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="col-md-4">
-      <div class="position-sticky mb-5" style="top: 2rem;">
-
+    <div class="col-lg-4 col-md-5">
+      <div class="position-sticky pb-4">
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-4">
             <h1 class="card-title mb-5 fs-5">4000 Rs per night</h1>

@@ -1,23 +1,62 @@
 .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.search-slt {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  height: calc(3rem + 2px) !important;
+  border-radius: 0;
+}
+.position-sticky {
+  top: 8rem;
+}
+
+.position-sticky {
+  display: block;
+}
+
+.fixed-card {
+  display: none;
+}
+
+
+/* @media screen and (max-width: 480px) {
+  .position-sticky {
+    display: none;
   }
-  
-  .search-slt {
+  .fixed-card {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+} */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .fixed-card {
     display: block;
     width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #55595c;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    height: calc(3rem + 2px) !important;
-    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    
   }
-
-
-
-
-  
+  /* .card{
+    background-color: #FAD30B;
+  } */
+  .position-sticky {
+    display: none;
+  }
+}
