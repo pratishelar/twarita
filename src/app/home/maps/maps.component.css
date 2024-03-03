@@ -1,0 +1,10 @@
+iframe {
+  height: 400px; /* Adjust height as needed */
+  width: 100%;
+  border:0;
+}
+
+.map-container {
+  height: 400px; /* Adjust height as needed */
+  width: 100%;
+}
