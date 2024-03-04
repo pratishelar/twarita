@@ -5,11 +5,20 @@ import { RoomsComponent } from '../rooms/rooms.component';
 import { MapsComponent } from './maps/maps.component';
 import { AboutComponent } from './about/about.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, SearchComponent, RoomsComponent, MapsComponent, AboutComponent, CarouselComponent],
+  imports: [
+    HeroComponent,
+    SearchComponent,
+    RoomsComponent,
+    MapsComponent,
+    AboutComponent,
+    CarouselComponent,
+    ContactComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })

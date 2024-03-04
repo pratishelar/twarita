@@ -13,8 +13,8 @@ ul li{
 ul li a{
     color:rgb(16, 12, 12) !important;
 }
-.navbar{
+/* .navbar{
     position: sticky;
     top: 0px;
     z-index: 1;
-}
+} */
