@@ -1,20 +1,24 @@
-.promotionBanner{
-    background-color: black;
+.promotionBanner {
+  background-color: black;
 }
-.navbar-dark{
-    font-size: 12px;
-    background-color: black !important;
+.navbar-dark {
+  font-size: 12px;
+  background-color: black !important;
 }
-ul li{
-    font-size: 16px;
-    font-weight: bold;
-   
+ul li {
+  font-size: 16px;
+  font-weight: bold;
 }
-ul li a{
-    color:rgb(16, 12, 12) !important;
+ul li a {
+  color: rgb(16, 12, 12) !important;
 }
-/* .navbar{
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-} */
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  box-shadow: 5px 10px 18px #c7c6c6;
+}
+
+.logotitle {
+  font-size: 13px;
+}
