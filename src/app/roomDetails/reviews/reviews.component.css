@@ -1,0 +1,24 @@
+.section {
+  border-right: solid 1px rgb(217, 217, 217);
+  margin-bottom: 20px;
+  /* padding-left: 10px; */
+}
+p {
+  font-weight: bold;
+  font-size: 14px;
+}
+.section:last-child {
+  border: none;
+}
+h6 {
+  font-size: 12px;
+}
+
+@media (max-width: 980px) {
+  .section:nth-child(3) {
+    border: none;
+  }
+  .section:last-child {
+    border: none;
+  }
+}

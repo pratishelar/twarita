@@ -9,6 +9,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @Component({
   selector: 'app-roomDetails',
@@ -19,7 +20,8 @@ import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
     JumbotronComponent,
     CarouselComponent,
     AmenitiesComponent,
-    ImageGalleryComponent
+    ImageGalleryComponent,
+    ReviewsComponent
   ],
   templateUrl: './roomDetails.component.html',
   styleUrls: ['./roomDetails.component.css'],

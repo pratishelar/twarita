@@ -1,4 +1,5 @@
 .logo{
     width: 10%;
     height: auto;
+    filter: drop-shadow(rgb(117, 117, 117) 1rem 1rem 10px);
 }
