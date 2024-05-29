@@ -18,13 +18,11 @@
         <h2 class="blog-post-title mt-4">{{room.title}} Room</h2>
         <p class="mt-2 subheader">Guests: {{room.guest}} &#xb7; Beds: {{room.bed}} &#xb7; Bath: {{room.bath}}</p>
 
-        <p class="blog-post-meta mt-4">Welcome to our delux room!
-          Delux room consist of 2 bed and single bathroom ampel space for accommodation of 2 guests.
+        <p class="blog-post-meta mt-4">Welcome to our {{room.title}} room!
+          {{room.title}} room consist of {{room.bed}} bed and {{room.bath}} bathroom ampel space for accommodation of 2 guests.
         </p>
 
-        <p class="mt-4"> This premium is situated in a quiet neighbourhood, which offers a peaceful environment for time
-          well spent with a group of friends or large family vacation. <a href="#">Jacob</a></p>
-
+        <p class="mt-4"> {{room.text}}</p>
 
         <app-image-gallery></app-image-gallery>
 
@@ -39,8 +37,8 @@
           <div class="card-body">
             <div class="row">
               <div class="col-6">
-                <span class="card-text"><strong> 4000 </strong> Rs per night</span>
-                <div>May 20 - 25</div>
+                <span class="card-text"><strong> {{room.price}} </strong> Rs per night</span>
+                <!-- <div>May 20 - 25</div> -->
               </div>
               <div class="col-6">
                 <button class="btn btn-danger float-end">Reserve</button>
@@ -56,7 +54,7 @@
       <div class="position-sticky pb-4">
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-4">
-            <h1 class="card-title mb-5 fs-5">4000 Rs per night</h1>
+            <h1 class="card-title mb-5 fs-5">{{room.price}} Rs per night</h1>
             <form>
               <div class="row">
                 <div class="col-md-12 mb-3">
@@ -68,9 +66,9 @@
 
                 <div class="col-md-12 mb-3">
                   <select class="form-control search-slt" id="exampleFormControlSelect1">
-                    <option>Room</option>
                     <option>Delux Room</option>
-                    <option>Family Room</option>
+                    <option>Super Delux Room</option>
+                    <option>Royal Deluxe Room</option>
                   </select>
                 </div>
               </div>
@@ -81,18 +79,10 @@
               <div class="d-grid mb-2">
                 <div class="row mb-3">
                   <div class="col-md-8">
-                    <span> $2,060 CAD x 5 nights Show price breakdown </span>
+                    <span> {{room.price}} x 1 nights </span>
                   </div>
                   <div class="col-md-4">
-                    <strong class="float-end"> 10,300 Rs </strong>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-8">
-                    <span> Cleaning fee Show price breakdown </span>
-                  </div>
-                  <div class="col-md-4">
-                    <strong class="float-end"> 300 Rs </strong>
+                    <strong class="float-end"> {{room.price}} Rs </strong>
                   </div>
                 </div>
                 <div class="row mb-3">
@@ -100,7 +90,7 @@
                     <span> Taxes </span>
                   </div>
                   <div class="col-md-4">
-                    <strong class="float-end"> 400 Rs </strong>
+                    <strong class="float-end"> 100 Rs </strong>
                   </div>
                 </div>
                 <hr>
@@ -109,7 +99,7 @@
                     <strong> Total </strong>
                   </div>
                   <div class="col-md-4">
-                    <strong class="float-end"> 40000 Rs </strong>
+                    <strong class="float-end"> {{room.price}} Rs </strong>
                   </div>
                 </div>
               </div>
@@ -121,7 +111,5 @@
       </div>
     </div>
   </div>
-
-
 
 </div>
