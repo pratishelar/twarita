@@ -1,24 +1,40 @@
-.carousel-inner {
+/* .carousel-inner {
   border-radius: 0;
-}
+} */
 
-.carousel-caption {
-  /* background-color: rgba(0, 0, 0, 0.5);  */
+/* .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); 
   border-radius: 0px;
-}
+} */
 
-.carousel-caption .form-control,
+/* .carousel-caption .form-control,
 .carousel-caption .btn,
 .carousel-caption .form-label {
-  color: #000; /* Text color */
-}
+  color: #000;
+} */
 
-h1 {
+/* h1 {
   font-size: 40px;
-}
+} */
 
-video {
+/* video {
   height: auto;
   width: 100%;
+} */
+
+.carousel-item img {
+  display: none !important;
 }
 
+.carousel-item img.desktop-img {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img.desktop-img {
+      display: none !important;
+  }
+  .carousel-item img.mobile-img {
+      display: block !important;
+  }
+}

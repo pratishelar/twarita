@@ -9,16 +9,20 @@ ul li {
   font-size: 16px;
   font-weight: bold;
 }
-ul li a {
+/* ul li a {
   color: rgb(16, 12, 12) !important;
-}
+} */
 .navbar {
-  position: sticky;
+  /* position: sticky; */
   top: 0px;
   z-index: 1;
-  box-shadow: 5px 5px 18px #a7a6a6;
+  /* box-shadow: 5px 5px 18px #a7a6a6; */
 }
 
 .logotitle {
   font-size: 12px;
 }
+
+/* .navbar-text{
+  font-size: 12px;
+} */
