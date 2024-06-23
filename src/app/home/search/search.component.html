@@ -5,20 +5,22 @@
         <div class="col-lg-12">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-6 p-0">
-              <input type="datetime-local" class="form-control search-slt" placeholder="Checkin time">
+              <input type="text" onfocus="(this.type='date')" [(ngModel)]="checkInTime" name="checkInTime"
+                class="form-control search-slt" placeholder="Check-In" >
             </div>
             <div class="col-lg-3 col-md-3 col-6 p-0">
-              <input type="datetime-local" class="form-control search-slt" placeholder="Checkout time">
+              <input type="text" onfocus="(this.type='date')"  
+                class="form-control search-slt" placeholder="Check-Out">
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
               <select class="form-control search-slt" id="exampleFormControlSelect1">
-                <option>Room</option>
                 <option>Delux Room</option>
-                <option>Family Room</option>
+                <option>Super Delux Room</option>
+                <option>Royal Delux Room</option>
               </select>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-              <button type="button" class="btn btn-danger wrn-btn">Book</button>
+              <a type="button" href="https://asiatech.in/booking_engine/index3?token=NzE5NA==" class="btn btn-danger wrn-btn">Book</a>
             </div>
           </div>
         </div>

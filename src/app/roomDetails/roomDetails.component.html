@@ -2,24 +2,28 @@
   <!-- <app-jumbotron [roomJumbotron]="room"></app-jumbotron> -->
 
   <div class="row">
-    <div class="col-md-12 mt-4 mb-4">
+    <div class="col-9 mt-4 mb-4">
       <h1 class="mt-2">{{room.title}} Room</h1>
       <p class="mt-2 subheader">Guests: {{room.guest}} &#xb7; Beds: {{room.bed}} &#xb7; Bath: {{room.bath}}</p>
     </div>
-    <div class="col-md-12">
+    <div class="col-3 mt-4 mb-4">
+      <button type="button" (click)="goToUrl()" class="btn btn-danger wrn-btn float-end mt-3">Reserve Room</button>
+    </div>
+    <div class="col-12">
       <app-carousel [roomCarousel]="room"></app-carousel>
     </div>
   </div>
 
 
   <div class="row g-5">
-    <div class="col-lg-8">
+    <div class="col-lg-12">
       <article class="blog-post mt-4 mb-4">
-        <h2 class="blog-post-title mt-4">{{room.title}} Room</h2>
-        <p class="mt-2 subheader">Guests: {{room.guest}} &#xb7; Beds: {{room.bed}} &#xb7; Bath: {{room.bath}}</p>
+        <!-- <h2 class="blog-post-title mt-4">{{room.title}} Room</h2>
+        <p class="mt-2 subheader">Guests: {{room.guest}} &#xb7; Beds: {{room.bed}} &#xb7; Bath: {{room.bath}}</p> -->
 
         <p class="blog-post-meta mt-4">Welcome to our {{room.title}} room!
-          {{room.title}} room consist of {{room.bed}} bed and {{room.bath}} bathroom ampel space for accommodation of 2 guests.
+          {{room.title}} room consist of {{room.bed}} bed and {{room.bath}} bathroom ampel space for accommodation of 2
+          guests.
         </p>
 
         <p class="mt-4"> {{room.text}}</p>
@@ -31,14 +35,12 @@
 
       <app-reviews></app-reviews>
 
-      <div class="fixed-card">
+      <!-- <div class="fixed-card">
         <div class="card">
-          <!-- <h5 class="card-header">Featured</h5> -->
           <div class="card-body">
             <div class="row">
               <div class="col-6">
                 <span class="card-text"><strong> {{room.price}} </strong> Rs per night</span>
-                <!-- <div>May 20 - 25</div> -->
               </div>
               <div class="col-6">
                 <button class="btn btn-danger float-end">Reserve</button>
@@ -46,15 +48,16 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
-    <div class="col-lg-4">
+    <!-- <div class="col-lg-3">
       <div class="position-sticky pb-4">
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-4">
             <h1 class="card-title mb-5 fs-5">{{room.price}} Rs per night</h1>
+            <a type="button" href="https://asiatech.in/booking_engine/index3?token=NzE5NA==" class="btn btn-danger wrn-btn">Book Now</a>
             <form>
               <div class="row">
                 <div class="col-md-12 mb-3">
@@ -109,6 +112,14 @@
         </div>
 
       </div>
+    </div> -->
+  </div>
+
+  <div class="row mt-5 mb-5">
+    <div class="col-12">
+
+      <button type="button" class="btn btn-danger wrn-btn" (click)="goToUrl()">Reserve Room</button>
+
     </div>
   </div>
 
