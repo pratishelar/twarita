@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookwhatsappComponent } from './bookwhatsapp/bookwhatsapp.component';
+import { GoogleReviewsComponent } from './google-reviews/google-reviews.component';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import { BookwhatsappComponent } from './bookwhatsapp/bookwhatsapp.component';
     AboutComponent,
     CarouselComponent,
     ContactComponent,
-    BookwhatsappComponent
+    BookwhatsappComponent,
+    GoogleReviewsComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
