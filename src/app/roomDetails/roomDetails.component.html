@@ -22,15 +22,15 @@
         <p class="mt-2 subheader">Guests: {{room.guest}} &#xb7; Beds: {{room.bed}} &#xb7; Bath: {{room.bath}}</p> -->
 
         <p class="blog-post-meta mt-4">Welcome to our {{room.title}} room!
-          {{room.title}} room consist of {{room.bed}} bed and {{room.bath}} bathroom ampel space for accommodation of 2
+          {{room.title}} room consist of {{room.bed}} bed and {{room.bath}} bathroom ampel space for accommodation of {{room.guest}}
           guests.
         </p>
 
         <p class="mt-4"> {{room.text}}</p>
 
-        <app-image-gallery></app-image-gallery>
-
+        <app-image-gallery [roomPhotos]="room"></app-image-gallery>
         <app-amenities [roomAmenities]="room"></app-amenities>
+        
       </article>
 
       <app-reviews></app-reviews>

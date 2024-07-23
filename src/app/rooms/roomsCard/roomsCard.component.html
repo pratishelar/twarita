@@ -1,13 +1,20 @@
-<div class="card text-center m-3" >
+<div class="card text-center m-3">
   <div class="card-header p-0" routerLink="/room/{{index}}">
     <img src="{{room.img}}" alt="img" class="w-100">
   </div>
   <div class="card-body" routerLink="/room/{{index}}">
     <h5 class="card-title">{{room.title}}</h5>
     <p class="card-text">{{room.text}}</p>
+    <p> 
+      <i class="fa-solid fa-users"></i> {{room.guest}} &#xb7; 
+      <i class="fa-solid fa-bed ms-1"></i> {{room.bed}} &#xb7; 
+      <i class="fa-solid fa-shower ms-1"></i> {{room.bath}}
+    </p>
     <!-- <h5> {{room.price}} &#8377; </h5> -->
   </div>
   <div class="card-footer">
-    <a href="https://bookings.asiatech.in/?page=7194&type=googlehotelads&checkin=2024-06-19&checkout=2024-06-20&bookingSource=GoogleCPC">Reserve Room</a>
+    <a
+      href="https://bookings.asiatech.in/?page=7194&type=googlehotelads&checkin=2024-06-19&checkout=2024-06-20&bookingSource=GoogleCPC">Reserve
+      Room</a>
   </div>
 </div>

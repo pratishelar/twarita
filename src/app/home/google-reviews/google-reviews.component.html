@@ -1,8 +1,5 @@
-
-
-
 <!-- Testimonial 1 - Bootstrap Brain Component -->
-<section class="py-3 py-md-5 py-xl-8">
+<section class="py-3 py-md-5 py-xl-8" *ngIf="reviews.length > 0">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -21,17 +18,15 @@
 
   <div class="container overflow-hidden">
     <div class="row justify-content-lg-around gy-5 gy-md-6">
-      <div class="col-12 col-sm-6 col-lg-5" *ngFor="let review of reviews | slice:0:4">
-        <div class="col-xl-11 col-xxl-10 mx-auto text-center">
-          <img class="img-fluid rounded rounded-circle mb-4" loading="lazy" src="{{review.profile_photo_url}}" alt="">
-          <p class="mb-2">{{review.text}}</p>
-          <p> <span class="fa fa-star ms-1" style="color:#ffc107;" aria-hidden="true"
-            *ngFor="let e of [].constructor(review.rating); let i = index"></span></p>
-          <p class="m-0 fw-bold">{{review.author_name}}</p>
-
-          <p>{{review.relative_time_description}}</p>
-          
-        </div>
+      <div class="col-12 col-sm-6 col-lg-5" *ngFor="let review of reviews">
+          <div class="col-xl-11 col-xxl-10 mx-auto text-center">
+            <img class="img-fluid rounded rounded-circle mb-4" loading="lazy" src="{{review.profile_photo_url}}" alt="">
+            <p class="mb-2">{{review.text}}</p>
+            <p> <span class="fa fa-star ms-1" style="color:#ffc107;" aria-hidden="true"
+                *ngFor="let e of [].constructor(review.rating); let i = index"></span></p>
+            <p class="m-0 fw-bold">{{review.author_name}}</p>
+            <p>{{review.relative_time_description}}</p>
+          </div>
       </div>
     </div>
   </div>

@@ -7,6 +7,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookwhatsappComponent } from './bookwhatsapp/bookwhatsapp.component';
 import { GoogleReviewsComponent } from './google-reviews/google-reviews.component';
+import { VideoBackgroundComponent } from './video-background/video-background.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,8 @@ import { GoogleReviewsComponent } from './google-reviews/google-reviews.componen
     CarouselComponent,
     ContactComponent,
     BookwhatsappComponent,
-    GoogleReviewsComponent
+    GoogleReviewsComponent,
+    VideoBackgroundComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],

@@ -16,11 +16,9 @@
 /* h1 {
   font-size: 40px;
 } */
-
-/* video {
-  height: auto;
-  width: 100%;
-} */
+h1 {
+  font-size: 4.5em;
+}
 
 .carousel-item img {
   display: none !important;

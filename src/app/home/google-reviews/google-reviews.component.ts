@@ -29,7 +29,7 @@ export class GoogleReviewsComponent implements OnInit {
 
     service.getDetails({ placeId }, (place, status) => {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
-        
+  
         this.reviews = place?.reviews || [];
         this.averageRating = place?.rating || null;
         this.totalRatings = place?.user_ratings_total || null;
@@ -51,6 +51,6 @@ export class GoogleReviewsComponent implements OnInit {
   }
 
   get stars() {
-    return Array(Math.floor(this.averageRating)).fill(0);
+    return Array(Math.floor(this.averageRating || 0)).fill(0);
   }
 }
