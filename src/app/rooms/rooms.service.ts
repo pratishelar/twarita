@@ -26,7 +26,7 @@ export class RoomsService {
       guest: 2,
       bed: 1,
       bath: 1,
-      img: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Fexecutive2.JPG?alt=media&token=8a12ebd0-2c35-4ea1-8e04-e3b0ce15a60a',
+      img: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Froom1.JPG?alt=media&token=1e5f930f-9b0b-4848-96e3-a45b691c6698',
       price: 2500,
       photos: [
         { id: 1, url: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Fsuper-1.JPG?alt=media&token=ed43d24d-4329-4347-8244-e92304b32b40' },
@@ -47,7 +47,7 @@ export class RoomsService {
       guest: 2,
       bed: 1,
       bath: 1,
-      img: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Fsuper-4.JPG?alt=media&token=886bcbbb-35c4-4d95-b0f2-986d90815f6b',
+      img: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Froom2.JPG?alt=media&token=fe1330ea-39ed-48d7-8c15-0f98dcc9a131',
       price: 3000,
       photos: [
         { id: 1, url: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Froyal-2.JPG?alt=media&token=bca26efa-a931-41ce-a2e3-8b2bfa25ca09' },
@@ -69,7 +69,7 @@ export class RoomsService {
       guest: 3,
       bed: 2,
       bath: 1,
-      img: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Fexecutive-1.JPG?alt=media&token=dabe16d8-2d94-4a2e-b5b1-ebb8bb19097e',
+      img: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Froom3.JPG?alt=media&token=5c35a912-a61f-4846-a77a-0d7ac4e3a547',
       price: 3500,
       photos: [
         { id: 1, url: 'https://firebasestorage.googleapis.com/v0/b/twarita-f1ea4.appspot.com/o/Twarita%20Lodge%20Photo%2Fexecutive-1.JPG?alt=media&token=dabe16d8-2d94-4a2e-b5b1-ebb8bb19097e' },

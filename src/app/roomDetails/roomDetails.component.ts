@@ -44,6 +44,6 @@ export class RoomDetailsComponent implements OnInit {
   }
 
   goToUrl(): void {
-    this.document.location.href = 'https://bookings.asiatech.in/?page=7194&type=googlehotelads&checkin=2024-06-19&checkout=2024-06-20&bookingSource=GoogleCPC';
+    this.document.location.href = 'https://bookings.asiatech.in/?page=7194&type=website';
   }
 }
